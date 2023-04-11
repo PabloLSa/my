@@ -2,8 +2,6 @@
 
 Sou desenvolvedor front-end com foco nos conhecimentos das tecnologias React, Javascript, CSS e Github!! 
 
-Sempre disponível para aprender mais sobre tecnologia e estou no caminho para full-stack!!
- Em agosto de 2022 decidi pela transição de carreira, e para atuar como pessoa desenvolvedora full stack ingressei na Trybe. Uma escola de tecnologia onde tenho apendido através de projetos como é para ingressar na carreira.
 
 Carreira de front-end Jr desenvolvida através de muita prática através de aprendizados de Soft e Hard Skills.
 Certificado conquistado através de avaliador via Github, avaliação feita dentro de projetos que desenvolvi através das tecnologias CSS, React JS, React Class, React Hooks, Redux, Context API.
@@ -11,7 +9,9 @@ Certificado conquistado através de avaliador via Github, avaliação feita dent
 Além de projetos pessoais, desenvolvi também projetos em Squads, onde através da ferramenta Trello desenvolvemos a metodogia Ágil Kanban .
 Todos projetos com prazo de entrega para validação e aprovação, foi um desafio profissional para o meu dia a dia.
 
+Sempre disponível para aprender mais sobre tecnologia e estou no caminho para full-stack!!
 
+ Em agosto de 2022 decidi pela transição de carreira, e para atuar como pessoa desenvolvedora full stack ingressei na Trybe. Uma escola de tecnologia onde tenho apendido através de projetos como ingressar na carreira.
 
 🔗
 <a href="https://www.linkedin.com/in/pablo-landim-de-sá-99267454" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
