@@ -15,7 +15,7 @@ const Header = () => {
 
 
       <div className="mt-4 flex justify-center">
-        <a href='https://www.linkedin.com/in/pablolandimdesadev//'
+        <a href='https://www.linkedin.com/in/pablolandimdesadev/'
           target="_blank" rel="noreferrer"
           className='text-white mr-2 text-xl'>
           <BsLinkedin /></a>
