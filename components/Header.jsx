@@ -7,8 +7,12 @@ const Header = () => {
 
       <h1 className='text-blue-500 text-4xl font-bold text-center'
         style={{
+
           textShadow: '0px 0px 10px rgba(0, 191, 255, 0.5)',
           boxShadow: '0px 0px 10px rgba(0, 191, 255, 0.5)',
+          padding: '0.3em',
+          borderRadius: '0.5em',
+          
         }}>
         Pablo Landim de Sá
       </h1>
