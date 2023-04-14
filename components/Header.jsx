@@ -1,7 +1,8 @@
+import { useContext } from 'react';
 import React from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
-const Header = () => {
+function Header  ()  {
   return (
 
     <header className='bg-gray-800 flex flex-col justify-center items-center h-32 w-full'>
@@ -28,6 +29,9 @@ const Header = () => {
               target="_blank" rel="noreferrer">
               <BsGithub />
             </a>
+          </span>
+          <span className='text-white mx-2 text-xl flex items-center'>
+            <button>🔦</button>
           </span>
         </div>
       </div>
