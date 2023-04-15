@@ -1,18 +1,18 @@
-import ThemeConext from '@/context/ThemeContext'
 import { Html, Head, Main, NextScript } from 'next/document'
+import ThemeContext from '../context/ThemeContext';
 
 export default function Document() {
   return (
-
-    <Html lang="en">
+<ThemeContext.Provider value={{ color: "dark" }}>
+<Html lang="en">
       <Head />
-      <ThemeConext.Provider value={{ color: 'dark' }}>
-        <body className='bg-white flex flex-col' >
+        <body>
           <Main />
           <NextScript />
         </body>
-      </ThemeConext.Provider>
     </Html>
+</ThemeContext.Provider>
+    
 
   )
 }

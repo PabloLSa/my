@@ -1,12 +1,15 @@
 import React from 'react';
 import ThemeConext from '@/context/ThemeContext';
 import Header from '../components/Header';
+import Nav from '../components/Nav';
 
 const Index = () => {
   return (
 
-    <div>
+    <div className='h-screen'>
       <Header />
+      <Nav />
+
     </div>
 
 
