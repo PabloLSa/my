@@ -6,13 +6,13 @@ import Image from 'next/image';
 
 function Nav() {
   const theme = useContext(ThemeContext);
-  const [themeClasses, setThemeClasses] = useState('bg-gray-600 h-full');
+  const [themeClasses, setThemeClasses] = useState('bg-gray-700 h-full');
 
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
-        ? 'bg-gray-400 h-full'
-        : 'bg-gray-600 h-full'
+        ? 'bg-gray-400 h-full' 
+        : 'bg-stone-950 h-full'
     );
   }, [theme.color]);
 
