@@ -6,9 +6,8 @@ import Image from 'next/image';
 
 function Nav() {
   const theme = useContext(ThemeContext);
-  // console.log(theme);
-  const [themeClasses, setThemeClasses]
-    = useState('bg-gray-600 h-full');
+  const [themeClasses, setThemeClasses] = useState('bg-gray-600 h-full');
+
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
@@ -16,12 +15,23 @@ function Nav() {
         : 'bg-gray-600 h-full'
     );
   }, [theme.color]);
+
   return (
     <div className={themeClasses}>
-      <Image src='/myphoto.jpeg' width={300} height={200} alt='Minha Foto' />
+      <div className="flex justify-center items-center h-full">
+        <Image 
+          src='/myphoto.jpeg' 
+          width={300} 
+          height={200} 
+          alt='Minha Foto'
+          className="rounded-full shadow-lg h-95 w-95 object-cover mx-auto my-8"
+        />
+      </div>
     </div>
   );
 }
+
+
 export default Nav;
 
 
