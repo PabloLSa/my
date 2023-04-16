@@ -10,6 +10,15 @@ function Header() {
   const theme = useContext(ThemeContext);
 // console.log(theme);
   const [themeClasses, setThemeClasses] = useState('text-blue-15b8c6 text-4xl font-bold text-center');
+  const[bgHeader, setbgHeader] = useState('bg-gray-800 flex flex-col justify-center items-center h-32 w-full');
+
+  useEffect(() =>{
+    setbgHeader(
+      theme.color === 'light'
+      ? 'bg-gray-800 opacity-90 flex flex-col justify-center items-center h-32 w-full'
+      : 'bg-gray-800 flex flex-col justify-center items-center h-32 w-full'
+    )
+  },[theme.color])
   
   useEffect(() => {
     setThemeClasses(
@@ -23,7 +32,7 @@ function Header() {
   // console.log(theme);
   return (
 
-    <header className='bg-gray-800 flex flex-col justify-center items-center h-32 w-full'>
+    <header className={bgHeader}>
       <div className="flex flex-col sm:flex-row items-center justify-center w-full px-4">
         <h1 className={themeClasses}
           style={{
