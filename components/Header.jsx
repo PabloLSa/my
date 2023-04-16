@@ -1,14 +1,15 @@
 import ThemeContext from '@/context/ThemeContext';
 import { useContext } from 'react';
+import { useState } from 'react';
 import React from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdOutlineFlashlightOff, MdOutlineFlashlightOn } from 'react-icons/md';
 
 // text-blue-15b8c6
 // text-blue-500
-function Header  ()  {
+function Header() {
   const theme = useContext(ThemeContext);
-  console.log(theme);
+  // console.log(theme);
   return (
 
     <header className='bg-gray-800 flex flex-col justify-center items-center h-32 w-full'>
@@ -37,9 +38,10 @@ function Header  ()  {
             </a>
           </span>
           <span className='text-white mx-2 text-xl flex items-center'>
-            <button onClick={console.log('click')}><MdOutlineFlashlightOff/></button>
-            <button onClick={console.log('click')}><MdOutlineFlashlightOn/></button>
-
+            <button
+              onClick={() => theme.toogleTheme()}>
+                {theme.color === "dark" ? <MdOutlineFlashlightOff /> : 
+                <MdOutlineFlashlightOn/>}</button>
           </span>
         </div>
       </div>

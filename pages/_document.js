@@ -3,7 +3,7 @@ import ThemeContext from '../context/ThemeContext';
 
 export default function Document() {
   return (
-<ThemeContext.Provider value={{ color: "dark" }}>
+
 <Html lang="en">
       <Head />
         <body>
@@ -11,7 +11,7 @@ export default function Document() {
           <NextScript />
         </body>
     </Html>
-</ThemeContext.Provider>
+
     
 
   )
