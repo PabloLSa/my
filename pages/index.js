@@ -16,7 +16,7 @@ const Index = () => {
       <ThemeContext.Provider value={{ color: themeColor, toogleTheme }}>
       <Header />
       <Nav />
-      <Footer />
+      <Footer /> 
       </ThemeContext.Provider>
     </div>
 

@@ -37,13 +37,12 @@ function Nav() {
         <div className="landscape">
           <div className={themeClasses}>
             <div className="flex flex-col justify-center items-center h-full">
-              <p className={themeClasses}>Desenvolvedor Front-end</p>
-              <p className={themeClasses}>Campinas, São Paulo</p>
               <img
                 src="/myphoto.jpeg"
                 alt="My Photo"
-                className="rounded-full shadow-lg h-80 w-64 object-cover my-4"
+                className="rounded-full shadow-lg h-full w-96 object-cover my-4 transition-all duration-1000"
               />
+
             </div>
           </div>
         </div>
@@ -54,7 +53,7 @@ function Nav() {
               <img
                 src="/myphoto.jpeg"
                 alt="Minha Foto"
-                className="rounded-full shadow-lg h-96 w-80 object-cover my-4"
+                className="rounded-full shadow-lg h-96 w-auto object-cover my-4"
               />
               <div className="text-center">
                 <p className={themeClasses}>Desenvolvedor Front-end</p>

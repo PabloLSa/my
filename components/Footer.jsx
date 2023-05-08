@@ -1,29 +1,13 @@
 import React from 'react';
-import { IconName } from "react-icons/ai";
-import ThemeContext from '@/context/ThemeContext';
 
-const Footer = () => {
+function Footer() {
   return (
-    <footer className='h-30 bg-black'>
-       <p className=' bg-gray-800 text-stone-950 text-4xl font-bold text-center '>
-      Hello
-    </p>
+    <footer className="flex flex-grow-0 flex-shrink-0 items-center justify-center h-16 bg-gray-200">
+      <div className="container mx-auto text-center">
+        <p>Component Contact</p>
+      </div>
     </footer>
-    //     <footer>
-    //     <h1 className=' bg-stone-950 text-blue-800 text-4xl font-bold text-center h-40'>
-    //    Hello
-    //  </h1>
-    //  </footer>
-   
   );
 }
 
 export default Footer;
-
-
-
-
-
-
-
-
