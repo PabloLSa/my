@@ -42,7 +42,7 @@ function Nav() {
               <img
                 src="/myphoto.jpeg"
                 alt="My Photo"
-                className="rounded-full shadow-lg h-96 w-64 object-cover my-4"
+                className="rounded-full shadow-lg h-80 w-64 object-cover my-4"
               />
             </div>
           </div>
@@ -54,7 +54,7 @@ function Nav() {
               <img
                 src="/myphoto.jpeg"
                 alt="Minha Foto"
-                className="rounded-full shadow-lg h-96 w-60 object-cover my-4"
+                className="rounded-full shadow-lg h-96 w-80 object-cover my-4"
               />
               <div className="text-center">
                 <p className={themeClasses}>Desenvolvedor Front-end</p>
