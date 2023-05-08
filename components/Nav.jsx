@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import ThemeContext from '@/context/ThemeContext';
 import { useState, useContext, useEffect } from 'react';
@@ -19,12 +20,10 @@ function Nav() {
   return (
     <div className={themeClasses}>
       <div className="flex flex-col justify-center items-center h-full">
-        <Image 
-          src='/myphoto.jpeg' 
-          width={300} 
-          height={200} 
+        <img
+          src='/myphoto.jpeg'  //excesão img 
           alt='Minha Foto'
-          className="rounded-full shadow-lg h-95 w-95 object-cover my-4"
+          className="rounded-full shadow-lg h-95 w-64 object-cover my-4"
         />
         <div className="text-center">
           <h2 className={themeClasses}>Desenvolvedor Front-end</h2>
