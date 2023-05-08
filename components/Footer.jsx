@@ -4,7 +4,7 @@ import ThemeContext from '@/context/ThemeContext';
 
 const Footer = () => {
   return (
-    <footer className='h-28 bg-black'>
+    <footer className='h-30 bg-black'>
        <p className=' bg-gray-800 text-stone-950 text-4xl font-bold text-center '>
       Hello
     </p>
