@@ -1,3 +1,4 @@
+![logo](/react%20pablo.png)
 # Olá,
 
 Sou desenvolvedor front-end com foco nos conhecimentos das tecnologias React, Javascript, CSS e Github!! 
@@ -12,9 +13,8 @@ Todos projetos com prazo de entrega para validação e aprovação, foi um desaf
 Sempre disponível para aprender mais sobre tecnologia e estou no caminho para full-stack!!
 
  Em agosto de 2022 decidi pela transição de carreira, e para atuar como pessoa desenvolvedora full stack ingressei na Trybe. Uma escola de tecnologia onde tenho apendido através de projetos como ingressar na carreira.
-
-🔗
-<a href="https://www.linkedin.com/in/pablo-landim-de-sá-99267454" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+ 
+# Mais sobre mim
 
 
 Experiência de 13 anos vendendo e instalando o serviço de rastreador veicular, onde apliquei muita negociação e comunicação.
@@ -22,4 +22,4 @@ Experiência de 13 anos vendendo e instalando o serviço de rastreador veicular,
 Sou casado, muito feliz com uma mulher linda, maravilhosa e batalhadora, temos dois filhos!!
 
 
-![logo](/react%20pablo.png)
+#  <a href="https://www.linkedin.com/in/pablo-landim-de-sá-99267454" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white " target="_blank"></a> 
