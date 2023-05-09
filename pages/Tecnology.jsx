@@ -1,10 +1,15 @@
+import Header from '@/components/Header';
 import React from 'react';
 
 const Tecnology = () => {
   return (
-    <div>
-      Em construcção.
-    </div>
+    <>
+      <Header />
+      <span>
+        Em construcção.
+      </span>
+    </>
+
   );
 }
 
