@@ -5,9 +5,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <div>
-      {/* <Header/> */}
       Em construcção 
-      {/* <Footer /> */}
     </div>
   );
 }
