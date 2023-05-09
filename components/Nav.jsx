@@ -51,7 +51,7 @@ function Nav() {
           <div className={themeClasses}>
             <div className="flex flex-col justify-center items-center h-full">
               <img
-                src="/myphoto.jpeg"
+                src="//myphototwo.jpeg"
                 alt="Minha Foto"
                 className="rounded-full shadow-lg h-96 w-auto object-cover my-4"
               />
