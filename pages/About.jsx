@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import { useContext, useState, useEffect } from 'react';
+import ThemeContext from '@/context/ThemeContext';
 
 
 const About = () => {
