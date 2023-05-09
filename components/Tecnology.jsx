@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import React from 'react';
 
-const Tecnology = () => {
+function Tecnology() {
   return (
     <>
       <Header />

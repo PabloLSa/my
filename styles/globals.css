@@ -10,4 +10,25 @@ body {
   background-color: rgb(0, 0, 0);
 } */
 
+@keyframes pulse-stronger {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+}
+
+.animate-pulse-stronger {
+  animation: pulse-stronger 1.5s infinite;
+}
+
+
+
 

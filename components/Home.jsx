@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useContext, useEffect } from 'react';
 import ThemeContext from '@/context/ThemeContext';
+import Link from 'next/link';
 
-function Nav() {
+function Home() {
   const [isLandscape, setIsLandscape] = useState(false);
   const theme = useContext(ThemeContext);
   const [themeClasses, setThemeClasses] = useState('bg-stone-950 h-full');
@@ -37,12 +38,19 @@ function Nav() {
         <div className="landscape">
           <div className={themeClasses}>
             <div className="flex flex-col justify-center items-center h-full">
-              <img
-                src="/myphototwo.jpeg"
-                alt="My Photo"
-                className="rounded-full shadow-lg h-full w-96 object-cover my-4 transition-all duration-1000"
-              />
-
+              <div className="flex items-center">
+                <Link href='/about' className='mr-4'>
+                  <span
+                    className={`text-4xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text ${themeClasses}`}>
+                    Sobre Mim
+                  </span>
+                </Link>
+                <img
+                  src="/myphototwo.jpeg"
+                  alt="My Photo"
+                  className="rounded-full shadow-lg h-full w-96 object-cover my-4 transition-all duration-1000"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -50,14 +58,21 @@ function Nav() {
         <div className="portrait">
           <div className={themeClasses}>
             <div className="flex flex-col justify-center items-center h-full">
-              <img
-                src="/myphototwo.jpeg"
-                alt="Minha Foto"
-                className="rounded-full shadow-lg h-96 w-auto object-cover my-4"
-              />
+              <Link href='/about'>
+                <img
+                  src="/myphototwo.jpeg"
+                  alt="Minha Foto"
+                  className="rounded-full shadow-lg h-96 w-auto object-cover my-4"
+                />
+              </Link>
+
               <div className="text-center">
-                <p className={themeClasses}>Desenvolvedor Front-end</p>
-                <p className={themeClasses}>Campinas, São Paulo</p>
+                <p className={`bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text ${themeClasses}`}>
+                  Desenvolvedor Front-end
+                </p>
+                <p className={`bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text ${themeClasses}`}>
+                  Campinas, São Paulo
+                </p>
               </div>
             </div>
           </div>
@@ -67,4 +82,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Home;
