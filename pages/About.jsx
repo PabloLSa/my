@@ -1,5 +1,5 @@
 import Header from '@/components/Header';
-import React from 'react';
+import { useContext, useState, useEffect } from 'react';
 
 
 const About = () => {
