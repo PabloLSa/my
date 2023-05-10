@@ -1,10 +1,17 @@
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import Home from '@/components/Home';
 import React from 'react';
 
 const Contact = () => {
   return (
-    <p className='text-center'> 
+    <div className='h-screen'> 
+    <Header />
+    <p className='text-center'>
     Em construção
-  </p>
+    </p>
+    
+  </div>
   );
 }
 

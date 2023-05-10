@@ -15,8 +15,8 @@ function Home() {
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
-        ? 'bg-gray-600 h-full text-2xl font-bold text-stone-950'
-        : 'bg-stone-950 h-full text-2xl font-bold text-slate-200'
+        ? 'bg-gray-600 h-full'
+        : 'bg-stone-950 h-full'
     );
   }, [theme.color]);
 
@@ -48,7 +48,8 @@ function Home() {
                 <img
                   src="/myphototwo.jpeg"
                   alt="My Photo"
-                  className="rounded-full shadow-lg h-full w-96 object-cover my-4 transition-all duration-1000"
+                  className="rounded-full shadow-lg h-full w-96 object-cover my-4"
+                  style={{ maxWidth: '100%' }}
                 />
               </div>
             </div>
@@ -63,6 +64,7 @@ function Home() {
                   src="/myphototwo.jpeg"
                   alt="Minha Foto"
                   className="rounded-full shadow-lg h-96 w-auto object-cover my-4"
+                  style={{ maxWidth: '100%' }}
                 />
               </Link>
 
