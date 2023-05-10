@@ -39,11 +39,19 @@ function About() {
             <div className="max-w-md mx-auto bg-white p-6 shadow-md rounded-md relative">
               <div className="absolute top-0 left-0 w-full h-full opacity-25 bg-black rounded-md" />
               <div className="text-gray-800 text-lg">
-                Aqui você pode escrever um pouco sobre si mesmo, suas experiências, habilidades, interesses, etc.
+              Olá,
+
+Sou desenvolvedor front-end  com foco nos conhecimentos das tecnologias React, Javascript, CSS e Github!!  
+Sempre disponível para aprender mais sobre tecnologia e estou no caminho para full-stack!!
+ Em agosto de 2022 decidi pela transição de carreira, e para atuar como pessoa desenvolvedora full stack ingressei na Trybe. Uma escola de tecnologia onde tenho apendido através de projetos como é para ingressar na carreira.
+
+Experiência de 13 anos vendendo e instalando o serviço de rastreador veicular, onde apliquei muita negociação e comunicação.
+
+Sou casado, muito feliz com uma mulher linda, maravilhosa e batalhadora, temos dois filhos!!
               </div>
               <div className="absolute bottom-0 left-0 w-full h-full z-0">
                 <div className="object-cover w-full h-full opacity-50 rounded-md">
-                  <Image src="/myPhoto3.jpeg" alt="My Photo" layout="fill" objectFit="cover" objectPosition="center" className="rounded-md" />
+                  <Image src="/myphoto.jpeg" alt="My Photo" fill={Image} cover={Image} center={Image} className="rounded-md" />
                 </div>
               </div>
             </div>
