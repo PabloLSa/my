@@ -6,6 +6,7 @@ export default function App({ Component, pageProps }) {
 <>
 <ThemeProviderContext>
 <Component {...pageProps} />
+
 </ThemeProviderContext>
 </>
   );

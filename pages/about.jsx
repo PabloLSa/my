@@ -1,6 +1,6 @@
+import { useContext, useEffect, useState } from 'react';
 import ThemeContext from '@/context/ThemeContext';
 import Header from '@/components/Header';
-import { useContext, useEffect, useState } from 'react';
 import Footer from '@/components/Footer';
 import { FaCoffee, FaReact } from 'react-icons/fa';
 import Image from 'next/image';
@@ -10,11 +10,7 @@ function About() {
   const [themeClasses, setThemeClasses] = useState('bg-stone-950');
 
   useEffect(() => {
-    setThemeClasses(
-      about.color === 'light'
-        ? 'bg-gray-600'
-        : 'bg-stone-950'
-    );
+    setThemeClasses(about.color === 'light' ? 'bg-gray-600' : 'bg-stone-950');
   }, [about.color]);
 
   return (
@@ -24,34 +20,34 @@ function About() {
 
         <main className={`flex-grow ${themeClasses}`}>
           <div className="container mx-auto py-8">
-            <h1 className="text-4xl font-bold mb-4 text-center relative">
+            <h1 className="text-4xl font-bold mb-8 text-center">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">
                 Sobre Mim
               </span>
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-                <FaCoffee className="text-2xl md:text-3xl lg:text-4xl text-blue-500" />
-              </div>
-              <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-                <FaReact className="text-2xl md:text-3xl lg:text-4xl text-blue-500" />
+              <div className="flex justify-center mt-4">
+                <FaCoffee className="text-4xl md:text-5xl lg:text-6xl text-blue-500 mx-4" />
+                <FaReact className="text-4xl md:text-5xl lg:text-6xl text-blue-500 mx-4" />
               </div>
             </h1>
 
-            <div className="max-w-md mx-auto bg-white p-6 shadow-md rounded-md relative">
-              <div className="absolute top-0 left-0 w-full h-full opacity-25 bg-black rounded-md" />
-              <div className="text-gray-800 text-lg">
-              Olá,
-
-Sou desenvolvedor front-end  com foco nos conhecimentos das tecnologias React, Javascript, CSS e Github!!  
-Sempre disponível para aprender mais sobre tecnologia e estou no caminho para full-stack!!
- Em agosto de 2022 decidi pela transição de carreira, e para atuar como pessoa desenvolvedora full stack ingressei na Trybe. Uma escola de tecnologia onde tenho apendido através de projetos como é para ingressar na carreira.
-
-Experiência de 13 anos vendendo e instalando o serviço de rastreador veicular, onde apliquei muita negociação e comunicação.
-
-Sou casado, muito feliz com uma mulher linda, maravilhosa e batalhadora, temos dois filhos!!
+            <div className="max-w-3xl mx-auto bg-gray-600 p-6 rounded-lg md:flex items-center">
+              <div className="md:w-1/2 md:pr-6">
+                <div className="text-gray-800 text-lg">
+                  Olá,
+                  <br />
+                  <br />
+                  Sou um desenvolvedor front-end com foco nas tecnologias React, JavaScript, CSS e GitHub. Estou sempre disponível para aprender mais sobre tecnologia e estou trilhando o caminho para me tornar um desenvolvedor full-stack. Em agosto de 2022, decidi fazer a transição de carreira e ingressei na Trybe, uma escola de tecnologia, para atuar como desenvolvedor full-stack. Tenho aprendido através de projetos como é ingressar nessa carreira emocionante.
+                  <br />
+                  <br />
+                  Tenho experiência de 13 anos vendendo e instalando serviços de rastreador veicular, onde desenvolvi habilidades valiosas em negociação e comunicação.
+                  <br />
+                  <br />
+                  Sou casado e extremamente feliz com uma mulher linda, maravilhosa e batalhadora. Temos dois filhos que são a luz das nossas vidas.
+                </div>
               </div>
-              <div className="absolute bottom-0 left-0 w-full h-full z-0">
-                <div className="object-cover w-full h-full opacity-50 rounded-md">
-                  <Image src="/myphoto.jpeg" alt="My Photo" fill={Image} cover={Image} center={Image} className="rounded-md" />
+              <div className="md:w-1/2 md:pl-6 mt-6 md:mt-0">
+                <div className="relative h-64 w-64 md:h-auto md:w-96 mx-auto rounded-full overflow-hidden">
+                  <Image src="/myphoto.jpeg" alt="My Photo" layout="fill" objectFit="cover" className="rounded-full" />
                 </div>
               </div>
             </div>

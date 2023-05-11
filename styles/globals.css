@@ -26,7 +26,7 @@ body {
 }
 
 .animate-pulse-stronger {
-  animation: pulse-stronger 1.5s infinite;
+  animation: pulse-stronger 1s infinite;
 }
 
 
