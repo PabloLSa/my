@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import ThemeContext from '@/context/ThemeContext';
 import Link from 'next/link';
 import Header from '../components/Header';
@@ -7,39 +6,31 @@ import Footer from '@/components/Footer';
 
 function Home() {
   const theme = useContext(ThemeContext);
-  const [themeClasses, setThemeClasses] = useState('bg-stone-950 h-full');
 
   useEffect(() => {
-    setThemeClasses(
-      theme.color === 'light'
-        ? 'bg-gray-600 h-full'
-        : 'bg-stone-950 h-full'
-    );
+    document.body.style.backgroundColor = theme.color === 'light' ? 'gray' : 'black';
   }, [theme.color]);
 
   return (
     <>
-
-     <div className="h-screen">
-     <Header />
-      <div className={themeClasses}>
-        <div className="flex flex-col justify-center items-center">
+      <Header />
+      <div className="bg-stone-950 min-h-screen">
+        <div className="flex flex-col justify-center items-center h-full">
           <div className="flex items-center justify-end">
             <div className="flex flex-col items-start">
               <div className="flex justify-center">
-              <span className={`text-4xl bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text`}>
+                <span className="text-4xl bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text">
                   Desenvolvedor Front-end
                 </span>
               </div>
-              <span className={`text-2xl bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text`}>
-                  Campinas, São Paulo
-                </span>
-                <span className={`text-4xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text`}>
-                  Sobre Mim
-                </span>
+              <span className="text-2xl bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text">
+                Campinas, São Paulo
+              </span>
+              <span className="text-4xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+                Sobre Mim
+              </span>
               <div className="text-white w-64">
-              Meus conhecimentos principais são em ReactJS, CSS3, Git, mas também sempre com vontade e disponível para aprender novas tecnologias. Hoje estou aprendendo SQL, Docker, NodeJs, entre outras. Estou em transição de carreira, sou formado em Front-end pela Trybe e estou rumo ao fullstack.
-                  Experiência de 13 anos vendendo e instalando o serviço de rastreador veicular, onde apliquei muita negociação e comunicação.
+                Atualmente com foco em ReactJS, NextJS, CSS3, Git mas também sempre com vontade e disponível para aprender novas tecnologias. Hoje estou aprendendo SQL, Docker, NodeJs entre outras. Estou em transição de carreira, sou formado Front-end pela Trybe e estou rumo ao fullstack.
               </div>
             </div>
             <img
@@ -67,13 +58,11 @@ function Home() {
               GitHub
             </a>
             <Link href="/projects" className="text-blue-500 hover:text-blue-700">
-                Projetos
+              Projetos
             </Link>
           </div>
         </div>
       </div>
-      </div>
-
       <Footer />
     </>
   );

@@ -45,7 +45,7 @@ function Header() {
           Pablo Landim de Sá
         </h1>
         <div className="flex items-center mt-2">
-          <span className='text-white mx-2 text-xl flex items-center'>
+          <span className='text-white mx-2 text-xl flex items-center hover:text-blue-600 mr-4'>
             <a href='https://www.linkedin.com/in/pablolandimdesadev/'
               target="_blank" rel="noreferrer">
               <BsLinkedin />
@@ -57,7 +57,7 @@ function Header() {
               <BsGithub />
             </a>
           </span>
-          <span className='text-white mx-2 text-xl flex items-center'>
+          <span className='text-white mx-2 text-xl flex items-center hover:text-yellow-500 mr-4'>
             <button
               onClick={() => theme.toogleTheme()}>
                 {theme.color === "dark" ? <MdOutlineFlashlightOff /> : 
