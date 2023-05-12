@@ -68,7 +68,7 @@ function Home() {
               rel="noopener noreferrer"
               className="text-4xl text-blue-500 hover:text-blue-700 mr-4"
             >
-              Github
+              GitHub
             </a>
             <Link href="/skills" className="text-4xl text-blue-500 hover:text-blue-700">
                 Skills
