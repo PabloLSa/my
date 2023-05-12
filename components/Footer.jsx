@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="container mx-auto text-center">
             <Link href="/contact">
               <span className="text-5xl animate-pulse bg-gradient-to-r from-blue-15b8c6 to-blue-500 bg-clip-text text-blue-600 animate-pulse-stronger">
-                Contato
+                Contact
               </span>
 
             </Link>  
