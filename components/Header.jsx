@@ -51,7 +51,7 @@ function Header() {
               <BsLinkedin />
             </a>
           </span>
-          <span className='text-white mx-2 text-xl flex items-center'>
+          <span className='text-white mx-2 text-xl flex items-center  hover:text-stone-950 mr-4'>
             <a href='https://github.com/PabloLSa'
               target="_blank" rel="noreferrer">
               <BsGithub />

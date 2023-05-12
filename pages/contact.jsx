@@ -7,15 +7,14 @@ function Contact() {
   const theme = useContext(ThemeContext);
 
   useEffect(() => {
-    document.title = 'Contato | Seu Nome'; // Altere "Seu Nome" para o seu nome ou título desejado
+    document.title = 'Contact | Plsa'; // Altere "Seu Nome" para o seu nome ou título desejado
   }, []);
-
   return (
     <>
       <div>
         <Header />
         <div className={theme.color === 'light' ? 'bg-gray-600' : 'bg-stone-950'}>
-          <div className="flex flex-col items-center py-16">
+          <div className="flex flex-col items-center py-3">
             <h1 className={`text-4xl bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text`}>
               Construindo
             </h1>
@@ -28,8 +27,8 @@ function Contact() {
         </div>
       </div>
       <footer className="bg-gray-800 py-4 text-center">
-        <div className="text-white">
-          <Link className="text-blue-500 hover:text-blue-700" href="/">
+        <div className="flex justify-center">
+          <Link className="text-blue-500 hover:text-blue-700 mr-4" href="/">
             Home
           </Link>
           <Link className="text-blue-500 hover:text-blue-700" href="/skills">

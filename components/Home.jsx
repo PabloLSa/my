@@ -66,8 +66,8 @@ function Home() {
             >
               Github
             </a>
-            <Link href="/projects" className="text-4xl text-blue-500 hover:text-blue-700">
-                Projetos
+            <Link href="/skills" className="text-4xl text-blue-500 hover:text-blue-700">
+                Skills
             </Link>
           </div>
         </div>
