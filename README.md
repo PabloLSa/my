@@ -12,7 +12,7 @@ Todos projetos com prazo de entrega para validação e aprovação, foi um desaf
 
 Sempre disponível para aprender mais sobre tecnologia e estou no caminho para full-stack!!
 
- Em agosto de 2022 decidi pela transição de carreira, e para atuar como pessoa desenvolvedora full stack ingressei na Trybe. Uma escola de tecnologia onde tenho apendido através de projetos como ingressar na carreira.
+ Em agosto de 2022 decidi pela transição de carreira, e para atuar como pessoa desenvolvedora full-stack ingressei na Trybe. Uma escola de tecnologia onde tenho apendido através de projetos como ingressar na carreira.
  
 # Mais sobre mim
 

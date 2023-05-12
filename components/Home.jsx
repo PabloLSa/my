@@ -34,7 +34,7 @@ function Home() {
               <span className={`text-2xl bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text`}>
                   Campinas, São Paulo
                 </span>
-                <span className={`text-4xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text`}>
+                <span className={`text-4xl bg-gradient-to-r from-blue-500  to-purple-500 text-transparent bg-clip-text`}>
                   Sobre Mim
                 </span>
               <div className="text-white w-64">
