@@ -3,6 +3,7 @@ import ThemeContext from '@/context/ThemeContext';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '@/components/Footer';
+// * <span className="text-5xl animate-pulse bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-blue-400 animate-pulse-stronger">
 
 function Home() {
   const theme = useContext(ThemeContext);

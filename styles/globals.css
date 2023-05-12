@@ -30,6 +30,19 @@ body {
 .animate-pulse-stronger {
   animation: pulse-stronger 1s infinite;
 }
+.balloon-container {
+  position: relative;
+}
+.balloon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+}
 
 
 

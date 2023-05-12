@@ -54,7 +54,7 @@ function Home() {
               href="https://www.linkedin.com/in/pablolandimdesadev/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-700 mr-4"
+              className=" text-4xl text-blue-500 hover:text-blue-700 mr-4"
             >
               LinkedIn
             </a>
@@ -62,11 +62,11 @@ function Home() {
               href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-700 mr-4"
+              className="text-4xl text-blue-500 hover:text-blue-700 mr-4"
             >
-              GitHub
+              Github
             </a>
-            <Link href="/projects" className="text-blue-500 hover:text-blue-700">
+            <Link href="/projects" className="text-4xl text-blue-500 hover:text-blue-700">
                 Projetos
             </Link>
           </div>
