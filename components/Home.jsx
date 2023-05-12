@@ -10,6 +10,10 @@ function Home() {
   const [themeClasses, setThemeClasses] = useState('bg-stone-950 h-full');
 
   useEffect(() => {
+    document.title = 'Home'; // Altere "Seu Nome" para o seu nome ou título desejado
+  }, []);
+
+  useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
         ? 'bg-gray-600 h-full'

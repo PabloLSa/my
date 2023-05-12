@@ -17,8 +17,8 @@ const Skills = () => {
         <Header />
         <div className={theme.color === 'light' ? 'bg-gray-600' : 'bg-stone-950'}>
           <div className="flex flex-col items-center py-3">
-            <h1 className={`text-4xl bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text`}>
-              Construindo
+            <h1 className={`text-6xl bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text`}>
+              Skills
             </h1>
             <div className="text-white w-64 text-center">
               <p>
@@ -30,10 +30,10 @@ const Skills = () => {
       </div>
       <footer className="bg-gray-800 py-4 text-center">
         <div className="flex justify-center">
-          <Link className="text-blue-500 hover:text-blue-700 mr-4" href="/">
+          <Link className="text-blue-500 hover:text-blue-700 mr-4 text-4xl" href="/">
             Home
           </Link>
-          <Link className="text-blue-500 hover:text-blue-700" href="/contact">
+          <Link className="text-blue-500 hover:text-blue-700 text-4xl" href="/contact">
             Contact
           </Link>
         </div>
