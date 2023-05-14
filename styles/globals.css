@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  /* background-color: aqua; */
+  min-height: 100vh;
+  
+  display: grid;
+  grid-template-rows:
+    auto
+    1fr
+    auto;
 }
 /* header {
   background-color: rgb(0, 0, 0);
@@ -30,19 +32,7 @@ body {
 .animate-pulse-stronger {
   animation: pulse-stronger 1s infinite;
 }
-.balloon-container {
-  position: relative;
-}
-.balloon::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent transparent white;
-}
+
 
 
 
