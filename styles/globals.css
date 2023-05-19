@@ -33,6 +33,10 @@ body {
   animation: pulse-stronger 1s infinite;
 }
 
+.btn-primary {
+  @apply bg-gradient-to-r from-blue-500 to-blue-700 font-semibold text-gray-900 md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
+}
+
 
 
 
