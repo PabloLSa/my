@@ -10,13 +10,13 @@ function Header() {
   const theme = useContext(ThemeContext);
 // console.log(theme);
   const [themeClasses, setThemeClasses] = useState('text-blue-15b8c6 text-4xl font-bold text-center');
-  const[bgHeader, setbgHeader] = useState('bg-gray-800 flex flex-col justify-center items-center py-5 w-full');
+  const[bgHeader, setbgHeader] = useState('bg-stone-950 flex flex-col justify-center items-center py-5 w-full');
 
   useEffect(() =>{
     setbgHeader(
       theme.color === 'light'
       ? 'bg-gray-800 opacity-90 flex flex-col justify-center py-5 items-center w-full'
-      : 'bg-gray-800 flex flex-col justify-center items-center py-5 w-full'
+      : 'bg-stone-950 flex flex-col justify-center items-center py-5 w-full' 
     )
   },[theme.color])
   

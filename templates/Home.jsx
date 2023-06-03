@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 function Home() {
   const theme = useContext(ThemeContext);
-  const [themeClasses, setThemeClasses] = useState('bg-stone-950 h-full');
+  const [themeClasses, setThemeClasses] = useState('bg-gray-800 opacity-100 h-full');
 
   useEffect(() => {
     document.title = 'Home'; // Altere "Seu Nome" para o seu nome ou título desejado
@@ -16,8 +16,8 @@ function Home() {
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
-        ? 'bg-gray-600'
-        : 'bg-stone-950'
+        ? 'bg-gray-600 opacity-100'
+        : 'bg-gray-800 opacity-100'
     );
   }, [theme.color]);
 
@@ -38,7 +38,7 @@ function Home() {
             <span className={`text-4xl bg-gradient-to-r from-blue-500  to-purple-500 text-transparent bg-clip-text`}>
               Sobre Mim
             </span>
-            <div className="text-white w-64">
+            <div className="text-gray-300 w-64">
               Meus conhecimentos principais são em ReactJS, CSS3, Git, mas também sempre com vontade e disponível para aprender novas tecnologias. Hoje estou aprendendo SQL, Docker, NodeJs, entre outras. Estou em transição de carreira, sou formado em Front-end pela Trybe e estou rumo ao fullstack.
               Experiência de 13 anos vendendo e instalando o serviço de rastreador veicular, onde apliquei muita negociação e comunicação.
             </div>
