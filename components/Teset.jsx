@@ -1,70 +1,80 @@
-/* eslint-disable @next/next/no-img-element */
-import { useContext, useEffect, useState } from 'react';
 import ThemeContext from '@/context/ThemeContext';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { useContext, useState, useEffect } from 'react';
+import React from 'react';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { MdOutlineFlashlightOff, MdOutlineFlashlightOn } from 'react-icons/md';
 
-function About() {
-  const about = useContext(ThemeContext);
-  const [themeClasses, setThemeClasses] = useState('bg-stone-950');
+// text-blue-15b8c6
+// text-blue-500
+function Header() {
+  const theme = useContext(ThemeContext);
+// console.log(theme);
+  const [themeClasses, setThemeClasses] = useState('bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-4xl font-bold text-center');
+  const[bgHeader, setbgHeader] = useState('bg-stone-950 flex flex-col justify-center items-center py-5 w-full');
 
+  useEffect(() =>{
+    setbgHeader(
+      theme.color === 'light'
+      ? 'bg-gray-800 opacity-90 flex flex-col justify-center py-5 items-center w-full'
+      : 'bg-stone-950 flex flex-col justify-center items-center py-5 w-full' 
+    )
+  },[theme.color])
+  
   useEffect(() => {
-    setThemeClasses(about.color === 'light' ? 'bg-gray-600' : 'bg-stone-950');
-  }, [about.color]);
+    setThemeClasses(
+      theme.color === 'light'
+        ? 'text-blue-500 text-4xl font-bold text-center'
+        : 'bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-4xl font-bold text-center'
+    );
+  }, [theme.color]);
+  
 
+  // console.log(theme);
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <div className={`flex-grow ${themeClasses}`}>
-        <div className="flex flex-col justify-center items-center h-full">
-          <div className="max-w-2xl md:flex md:items-center md:justify-between">
-            <img
-              src="/myphototwo.jpeg"
-              alt="My Photo"
-              className="rounded-full shadow-lg h-auto w-64 object-cover md:ml-6 md:order-1 mb-4 md:mb-0"
-            />
-            <div className="md:order-2">
-              <span className={`text-4xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text ${themeClasses}`}>
-                Sobre Mim
-              </span>
-              <div className="text-white mt-4">
-                <h1 className={`text-4xl bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text`}>Desenvolvedor Front-end</h1>
-                <p>
-                  Campinas, São Paulo. Atualmente com foco em ReactJS, NextJS, CSS3, Git, mas também sempre com vontade e disponível para aprender novas tecnologias. Hoje estou aprendendo SQL, Docker, NodeJs, entre outras. Estou em transição de carreira, sou formado em Front-end pela Trybe e estou rumo ao fullstack.
-                  Experiência de 13 anos vendendo e instalando o serviço de rastreador veicular, onde apliquei muita negociação e comunicação.
-                </p>
-                <div className="flex mt-4">
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:text-blue-700 mr-4"
-                  >
-                    LinkedIn
-                  </a>
-                  <a
-                    href="https://github.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:text-blue-700 mr-4"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href="/projects"
-                    className="text-blue-500 hover:text-blue-700"
-                  >
-                    Projetos
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+    <header className={bgHeader}>
+      <div className="flex flex-col items-center justify-center w-full px-4 sm:flex-row">
+        <h1 className={themeClasses}
+          style={{
+            // textShadow: '0px 2px 4px rgba(0, 0, 0, 0.3)',
+            boxShadow: '0px 0px 10px rgba(0, 191, 255, 0.5)',
+            padding: '0.3em',
+            borderRadius: '0.5em',
+            whiteSpace: 'nowrap'
+          }}>
+          Pablo Landim de Sá
+        </h1>
+        <div className="flex items-center mt-2">
+          <span className='flex items-center mx-6 mr-4 text-xl text-white hover:text-blue-600'>
+            <a href='https://www.linkedin.com/in/pablolandimdesadev/'
+              target="_blank" rel="noreferrer">
+              <BsLinkedin />
+            </a>
+          </span>
+          <span className='flex items-center mx-6 mr-4 text-xl text-white hover:text-zinc-400'>
+            <a href='https://github.com/PabloLSa'
+              target="_blank" rel="noreferrer">
+              <BsGithub />
+            </a>
+          </span>
+          <span className='flex items-center mx-6 mr-4 text-xl text-white hover:text-yellow-500'>
+            <button
+              onClick={() => theme.toogleTheme()}>
+                {theme.color === "dark" ? <MdOutlineFlashlightOff /> : 
+                <MdOutlineFlashlightOn/>}</button>
+          </span>
         </div>
       </div>
-      <Footer />
-    </div>
+    </header>
+
+
+
+
+
+
+
+
   );
 }
 
-export default About;
+export default Header;

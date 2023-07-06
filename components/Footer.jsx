@@ -22,7 +22,7 @@ const Footer = () => {
       return         <footer className={themeClass}>
       <div className="container mx-auto text-center">
         <Link href="/contact">
-          <span className="text-5xl animate-pulse bg-gradient-to-r from-blue-15b8c6 to-blue-500 bg-clip-text text-blue-600 animate-pulse-stronger">
+          <span className="text-5xl text-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text">
             Contact
           </span>
 
@@ -30,23 +30,23 @@ const Footer = () => {
       </div>
     </footer>;
     } else if (pathname === '/skills') {
-      return   <footer className="bg-gray-800 py-4 text-center">
+      return   <footer className="py-4 text-center bg-gray-800">
       <div className="flex justify-center">
-        <Link className="text-blue-500 hover:text-blue-700 mr-4 text-4xl" href="/">
+        <Link className="mr-4 text-4xl text-blue-500 hover:text-blue-700" href="/">
           Home
         </Link>
-        <Link className="text-blue-500 hover:text-blue-700 text-4xl" href="/contact">
+        <Link className="text-4xl text-blue-500 hover:text-blue-700" href="/contact">
           Contact
         </Link>
       </div>
     </footer>;
     } else {
-      return     <footer className="bg-gray-800 py-4 text-center">
+      return     <footer className="py-4 text-center bg-gray-800">
       <div className="flex justify-center">
-        <Link className="text-blue-500 hover:text-blue-700 mr-4 text-4xl" href="/">
+        <Link className="mr-4 text-4xl text-blue-500 hover:text-blue-700" href="/">
           Home
         </Link>
-        <Link className="text-blue-500 hover:text-blue-700 text-4xl"  href="/skills">
+        <Link className="text-4xl text-blue-500 hover:text-blue-700"  href="/skills">
           Skills
         </Link>
       </div>

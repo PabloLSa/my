@@ -9,7 +9,7 @@ import { MdOutlineFlashlightOff, MdOutlineFlashlightOn } from 'react-icons/md';
 function Header() {
   const theme = useContext(ThemeContext);
 // console.log(theme);
-  const [themeClasses, setThemeClasses] = useState('text-blue-15b8c6 text-4xl font-bold text-center');
+  const [themeClasses, setThemeClasses] = useState('bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-4xl font-bold text-center');
   const[bgHeader, setbgHeader] = useState('bg-stone-950 flex flex-col justify-center items-center py-5 w-full');
 
   useEffect(() =>{
@@ -24,7 +24,7 @@ function Header() {
     setThemeClasses(
       theme.color === 'light'
         ? 'text-blue-500 text-4xl font-bold text-center'
-        : 'text-blue-15b8c6 text-4xl font-bold text-center'
+        : 'bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-4xl font-bold text-center'
     );
   }, [theme.color]);
   
@@ -33,10 +33,10 @@ function Header() {
   return (
 
     <header className={bgHeader}>
-      <div className="flex flex-col sm:flex-row items-center justify-center w-full px-4">
+      <div className="flex flex-col items-center justify-center w-full px-4 sm:flex-row">
         <h1 className={themeClasses}
           style={{
-            textShadow: '0px 0px 10px rgba(0, 191, 255, 0.5)',
+            // textShadow: '0px 2px 4px rgba(0, 0, 0, 0.3)',
             boxShadow: '0px 0px 10px rgba(0, 191, 255, 0.5)',
             padding: '0.3em',
             borderRadius: '0.5em',
@@ -45,19 +45,19 @@ function Header() {
           Pablo Landim de Sá
         </h1>
         <div className="flex items-center mt-2">
-          <span className='text-white mx-2 text-xl flex items-center hover:text-blue-600 mr-4'>
+          <span className='flex items-center mx-6 mr-4 text-xl text-white hover:text-blue-600'>
             <a href='https://www.linkedin.com/in/pablolandimdesadev/'
               target="_blank" rel="noreferrer">
               <BsLinkedin />
             </a>
           </span>
-          <span className='text-white mx-2 text-xl flex items-center  hover:text-stone-950 mr-4'>
+          <span className='flex items-center mx-6 mr-4 text-xl text-white hover:text-zinc-400'>
             <a href='https://github.com/PabloLSa'
               target="_blank" rel="noreferrer">
               <BsGithub />
             </a>
           </span>
-          <span className='text-white mx-2 text-xl flex items-center hover:text-yellow-500 mr-4'>
+          <span className='flex items-center mx-6 mr-4 text-xl text-white hover:text-yellow-500'>
             <button
               onClick={() => theme.toogleTheme()}>
                 {theme.color === "dark" ? <MdOutlineFlashlightOff /> : 
